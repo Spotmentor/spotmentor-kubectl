@@ -7,6 +7,6 @@ ENV HOME=/config
 RUN set -x && \
     apk add --no-cache curl ca-certificates git openssh-client && \
     apk add --no-cache python py-pip py-setuptools && \
-    pip --no-cache-dir install gitpython && \ 
+    pip --no-cache-dir install gitpython pymongo && \ 
     chmod +x /usr/local/bin/kubectl && \
     kubectl version --client
