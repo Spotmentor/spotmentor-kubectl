@@ -8,3 +8,4 @@ Stores the DOCKERFILE for all the versions of spotmentor/kubectl hub project (ht
 
 - Added GIT CLI.
 - Added Openssh Client
+- Added Python and Gitpython library
