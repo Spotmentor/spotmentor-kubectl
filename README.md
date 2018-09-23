@@ -10,4 +10,4 @@ Stores the DOCKERFILE for all the versions of spotmentor/kubectl hub project (ht
 - Added Openssh Client
 - Added Python and Gitpython library
 - Added pyyaml python library
-- Updated the kubectl version to 1.11.3
+- Updated the kubectl version to 1.11.0
