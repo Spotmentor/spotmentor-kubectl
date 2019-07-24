@@ -1,0 +1,12 @@
+FROM alpine:3.8
+
+ADD https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/kubectl /usr/local/bin/kubectl
+
+ENV HOME=/config
+
+RUN set -x && \
+    apk add --no-cache curl ca-certificates git openssh-client && \
+    apk add --no-cache python py-pip py-setuptools && \
+    pip --no-cache-dir install gitpython pymongo pyyaml && \
+    chmod +x /usr/local/bin/kubectl && \
+    kubectl version --client
